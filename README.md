@@ -1,0 +1,2 @@
+# Portfolio
+This is my personal portfolio website. I am a Full stack developer (MEAN) and passionate techie to learn new things. I design & build user interfaces. I work on different new technologies like Google's firebase, Amazon Alexa, Amazon web services. Besides my job, I am currently working on Building native chatbots (Using RASA NLU). I am just a click away from you - https://nagahemanth.me
