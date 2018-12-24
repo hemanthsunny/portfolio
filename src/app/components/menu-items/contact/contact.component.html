@@ -1,0 +1,92 @@
+<div class="hs-blog">
+	<div class="col-sm-12">
+		<div class="options-container pull-right">
+			<ul class="nav nav-pills options-list">
+				<li class="active" (click)="saveSuccess=false">
+					<a href="#general" data-toggle="tab">General</a>
+				</li>
+				<li (click)="saveSuccess=false">
+					<a href="#hire" data-toggle="tab">Hire</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="hs-contact" *ngIf="!saveSuccess">
+		<div class="tab-content clearfix">
+			<div class="tab-pane active" id="general">
+				<div class="col-xs-12">
+					<img src="assets/images/selfie.jpg" class="hs-img-sm pull-left">
+					<div class="tab-pane-text f-w-5">
+					#General - You can discuss with me about Web technologies (HTML5,CSS3, Bootstrap, Javascript) and latest technologies . I am just a minute away.
+					</div>
+				</div>
+	      <form name="userForm" method="post">
+	      	<div class="row">
+	      		<div class="col-xs-12 col-sm-6">
+	      			<label for="email" class="form-label">Your Email <sup>*</sup></label>
+	      			<input type="email" name="email" [(ngModel)]="fields.email" class="form-control" placeholder="xxx@xxx.co">
+	      		</div>
+	      		<div class="col-xs-12 col-sm-6">
+	      			<label for="category" class="form-label">Category <sup>*</sup></label>
+	      			<select class="form-control" name="tech_name" [(ngModel)]="fields.tech_name">
+	      				<option *ngFor="let tech of technologies">
+	      				{{tech}}</option>
+	      			</select>
+	      		</div>
+	      		<div class="col-xs-12 form-textarea">
+	      			<label for="message" class="form-label">Message <sup>*</sup></label>
+	      			<textarea class="form-control" rows="5" name="message" [(ngModel)]="fields.message" placeholder="Message..."></textarea>
+	      		</div>
+		        <div class="form-group text-center form-button">
+		          <button type="button" class="btn btn-primary" (click)="save(fields, 'general')" [disabled]="sendBtnDisabled">
+		            Send to HS . . .
+		          </button>
+		        </div>
+	      	</div>
+	      </form>
+			</div>
+			<div class="tab-pane" id="hire">
+				<div class="col-xs-12">
+					<img src="assets/images/selfie.jpg" class="hs-img-sm pull-left">
+					<div class="tab-pane-text">
+					#Hire - I have handful experience as a Full Stack Developer (MongoDB, ExpressJS, AngularJS, FeathersJS). Further, I am available for full-time jobs / full-time freelancing.
+					<a href="../../../assets/docs/resume.pdf" download="NAGA_HEMANTH_RESUME" class="download-link"> Download my resume.</a>
+					</div>
+				</div>
+	      <form name="userForm" method="post" class="">
+	      	<div class="row">
+	      		<div class="col-xs-12 col-sm-6">
+	      			<label for="email" class="form-label">Your Email <sup>*</sup></label>
+	      			<input type="email" name="email" [(ngModel)]="fields.email" class="form-control" placeholder="xxx@xxx.co">
+	      		</div>
+	      		<div class="col-xs-12 col-sm-6">
+	      			<label for="category" class="form-label">Hire for <sup>*</sup></label>
+	      			<select class="form-control" name="hiring_type" [(ngModel)]="fields.hiring_type">
+	      				<option *ngFor="let h of hire">{{h}}</option>
+	      			</select>
+	      		</div>
+	      		<div class="col-xs-12 form-textarea">
+	      			<label for="message" class="form-label">Message <sup>*</sup></label>
+	      			<textarea class="form-control" rows="5" name="message" [(ngModel)]="fields.message" placeholder="Message..."></textarea>
+	      		</div>
+		        <div class="form-group text-center form-button">
+		          <button type="button" class="btn btn-primary" (click)="save(fields, 'hire')" [disabled]="sendBtnDisabled">
+		            Send to HS . . .
+		          </button>
+		        </div>
+	      	</div>
+	      </form>
+			</div>
+		</div>
+	</div>
+
+	<div class="hs-intro" *ngIf="saveSuccess">
+		<div class="col-xs-12">
+			<img src="assets/images/selfie.jpg" class="hs-img">
+		</div>
+		<p>
+			Thank you for your message. Kindly, check your email inbox for reponse. Just a minute away.
+		</p>
+	</div>
+</div>

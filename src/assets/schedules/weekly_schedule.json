@@ -1,0 +1,12 @@
+[
+	{
+		"title": "Week 1",
+		"date_from" : "9-09-16",
+		"date_to" : "9-09-16",
+		"tasks": [
+			"Complete Skills page"
+		],
+		"progress": "50%",
+		"final_status": ["Completed", "Incompleted", "Postpone"]
+	}
+]

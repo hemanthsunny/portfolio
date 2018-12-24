@@ -1,0 +1,12 @@
+# - Collection
+: - Column Name
+===============
+#general
+: email
+: tech_name
+: message
+
+#hire
+: email
+: hiring_type
+: message

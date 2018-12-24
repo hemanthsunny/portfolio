@@ -1,0 +1,47 @@
+<div class="hs-blog">
+  <div class="hs-blog-container">
+    <ul class="breadcrumb pull-right">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)" (click)="closeBlog()"><i class="fa fa-angle-left"></i> &nbsp; Back to blogs</a>
+      </li>
+    </ul>
+    <div class="header">
+      <h2 class="hs-blog-header">{{blog.header}}</h2>
+    </div>
+    <div class="sub-header">
+      <p class="hs-blog-sub-header" id="color-pale-white">
+      {{blog.sub_header}}
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 media">
+        <div class="media-left">
+          <img src="{{blog.author_img}}" class="media-object" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;">
+        </div>
+        <div class="media-body" style="margin-left: 0px">
+          <span class="f-w-5 media-heading">{{blog.author}}</span><br>
+          <span class="f-w-3">{{blog.author_prof}}</span>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <span class="blog-category" style="color: #fbc531;">
+        <i class="fa fa-tags"></i>
+        {{blog.category | uppercase}}
+        </span> <br>
+        <i class="publish-date">{{blog.published_date}} - {{blog.time_elapsed}}</i>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div *ngFor="let link of blog.img_links">
+      <div class="col-sm-4 image text-center">
+        <img class="hs-blog-image" [src]="link">
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="body">
+      <div class="hs-blog-body" [innerHTML]="blog.text">
+      </div>
+      <disqus [identifier]="'/blog'"></disqus>
+    </div>
+  </div>
+</div>

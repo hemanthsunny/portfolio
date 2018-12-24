@@ -1,0 +1,11 @@
+#Menu
+== Dashboard
+== Skills
+== Ideas
+== Contact
+== Blog
+
+#Navbar
+== Sidemenu trigger
+== Name - Menu Item
+== Social links

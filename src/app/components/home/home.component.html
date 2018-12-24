@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="topbar">
+			<app-navbar [workflow]="workflow" (onChange)="smallSidebar=$event"></app-navbar>
+		</div>
+		<div class="sidebar">
+			<app-sidebar [workflow]="workflow" [sidebar]="smallSidebar"></app-sidebar>
+		</div>
+		<div class="sidebar-details">
+			<app-sidebar-details [workflow]="workflow" [xsSidebar]="smallSidebar"></app-sidebar-details>
+		</div>
+	</div>
+</div>

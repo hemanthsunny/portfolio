@@ -1,0 +1,29 @@
+<div class="text-center">
+  <h3 class="f-w-9">
+    <i class="fa fa-newspaper-o"></i>
+    &nbsp; BLOGS &nbsp; - &nbsp;
+    <span class="f-w-5">Bring your writer outside</span>
+  </h3>
+  <br><br>
+</div>
+<ng-template ngFor let-blog [ngForOf]="blogs" let-idx="index" *ngIf="blogs && blogs.length > 0">
+  <div class="container card blog-cards" (click)="displayBlog(blog)">
+    <div class="media">
+      <div class="media-left">
+        <img src="{{blog.img_links[0]}}" class="media-object" style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="media-body">
+        <h4 style="margin-top: 25px;">{{blog.header}}</h4>
+        <p class="body">
+          <i>By {{blog.author}}</i> <br><br>
+          <span class="blog-category pull-left" style="color: #fbc531;">
+          <i class="fa fa-tags"></i>
+          {{blog.category | uppercase}}
+          </span>
+          <span class="publish-date pull-right" style="font-size: 13px;">
+          {{blog.published_date}} - {{blog.time_elapsed}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</ng-template>

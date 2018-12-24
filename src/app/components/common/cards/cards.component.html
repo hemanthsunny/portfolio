@@ -1,0 +1,112 @@
+<div class="hs-header row col-sm-12">
+	<h3 class="hs-header-title">
+		<div class="pull-left">
+			<span class="{{icon}}"></span> &nbsp; {{title}}
+		</div>
+	</h3>
+</div>
+<div class="clearfix"></div>
+<div class="hs-body">
+	<div *ngIf="cardType == 'small'">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let card of cardDetails; let i=index">
+				<div class="hs-card-sm">
+					<div class="hs-card-header-sm">
+						<h4 class="hs-card-title-sm">
+							{{card.title}}
+						</h4>
+						<div class="hs-card-help-icon-sm" *ngFor="let icon of card.icons">
+							<button class="hs-icon-btn pull-right">
+								<span class="{{icon}} fa-mouse-on"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div *ngIf="cardType == 'medium'">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let card of cardDetails; let i=index">
+				<div class="hs-card-md">
+					<div class="hs-card-header-md">
+						<h4 class="hs-card-title-md">
+							{{card.title}}
+						</h4>
+						<div class="hs-card-help-icon-md" *ngFor="let icon of card.icons">
+							<button class="hs-icon-btn pull-right">
+								<span class="{{icon}} fa-mouse-on"></span>
+							</button>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="hs-card-image-md">
+						<img src="{{card.image}}" alt="{{card.image_nf}}">
+					</div>
+					<div class="hs-card-footer">
+						<div class="row">
+              <div *ngFor="let link of card.links">
+                <div class="col-xs-{{link.width ? link.width : 6}} hs-short-link">
+                  <a class="btn-link" href="{{link.link_to}}">
+                    {{link.link_name}}
+                  </a>
+                </div>
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div *ngIf="cardType == 'large'">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4" *ngFor="let card of cardDetails; let i=index">
+				<div class="hs-card">
+					<div class="hs-card-header">
+						<h4 class="hs-card-title">
+							{{card.title}}
+						</h4>
+						<div class="hs-card-help-icon" *ngFor="let icon of card.icons">
+							<button class="hs-icon-btn pull-right">
+								<span class="{{icon}} fa-mouse-on"></span>
+							</button>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="hs-card-image">
+						<img src="{{card.image}}" alt="{{card.image_nf}}">
+					</div>
+					<div class="hs-card-body">
+						<div class="hs-card-subpart" *ngFor="let detail of card.body">
+							<div *ngIf="detail.format == 'text'">
+								<h6 class="hs-card-subtitle">{{detail.subtitle}}</h6>
+								<p class="text-justify hs-card-text">
+									{{detail.values}}
+								</p>
+							</div>
+							<div *ngIf="detail.format == 'list'">
+								<h6 class="hs-card-subtitle">{{detail.subtitle}}</h6>
+								<ul class="hs-card-list">
+									<li *ngFor="let item of detail.values">
+										{{item}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="hs-card-footer">
+						<div class="row">
+              <div *ngFor="let link of card.links">
+                <div class="col-xs-{{link.width}} hs-short-link">
+                  <a class="btn-link" href="{{link.link_to}}">
+                    {{link.link_name}}
+                  </a>
+                </div>
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

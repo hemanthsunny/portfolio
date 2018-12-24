@@ -1,0 +1,142 @@
+<div class="hs-dashboard">
+	<div class="hs-media" *ngIf="displayWorks">
+		<object type="application/pdf" width="100%" height="700px" data="assets/docs/resume.pdf"></object>
+	</div>
+	<div class="hs-intro" *ngIf="!displayWorks">
+		<div class="col-xs-12" style="margin-top: -50px;">
+			<img src="assets/images/selfie.jpg" class="hs-img">
+		</div>
+		<div class="col-xs-12">
+			<p class="f-w-5" style="margin-top: 50px;">
+				Hi, I'm Naga Hemanth. I am a Full stack developer (MEAN) and passionate techie to learn new things. I design & build user interfaces. I work on different new technologies like Google's firebase, Amazon Alexa, Amazon web services. Besides my job,  I am currently working on Building native chatbots (Using RASA NLU).
+			</p>
+		</div>
+  	<div class="col-xs-12 text-center" *ngIf="!displayWorks" style="margin-top: 50px;">
+      <a href="{{resumeLink}}" download="NAGA_HEMANTH_RESUME">
+        <button class="btn btn-primary" (click)="displayWorks=true">More About Me</button>
+      </a>
+  	</div>
+  </div>
+  <div class="clearfix"></div>
+<!-- 	<div class="hs-table col-xs-12" style="margin-top: 240px;">
+		<div class="text-center">
+			<button class="btn btn-primary">My Scheduler</button>
+		</div>
+		<br><br><br>
+		<div class="table-responsive-xs">
+			<div class="col-xs-12">
+				<div class="pull-left">
+					<h6>Friday - July 13, 2018</h6>
+				</div>
+				<div class="pull-right">
+					<button class="btn btn-default" (click)="newTask = true">
+						ADD TASK
+					</button>
+				</div>
+			</div>
+			<table class="table table-bordered">
+				<thead>
+					<th scope="col">Duration</th>
+					<th scope="col">Time slot</th>
+					<th scope="col">Work</th>
+					<th scope="col">Complete</th>
+					<th scope="col">Incomplete</th>
+					<th scope="col">Delete</th>
+				</thead>
+				<tbody>
+					<tr *ngFor="let task of tasks; let i=index">
+						<th scope="row">1 hr</th>
+						<th scope="row">
+							{{task.from_hours}}:{{task.from_mins}} - {{task.to_hours}}:{{task.to_mins}}
+						</th>
+						<td>
+							{{task.work_detail}}
+						</td>
+						<td>
+							<input #task_status type="radio" name="task_status" [(ngModel)] = "task.complete" (change)="update(task)" />
+							<span class="radio-check radio-check-success"></span>
+						</td>
+						<td>
+							<input #task_status type="radio" name="task_status" [(ngModel)] = "task.incomplete" (change)="update(task, $event)"/>
+							<div class="radio-check radio-check-fail"></div>
+						</td>
+						<td>
+							<span class="fa fa-trash fa-md"></span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">2 hr</th>
+						<th scope="row">12:15 - 14:15</th>
+						<td>This is task two which is big with large time consumings.</td>
+						<td><input type="radio" name="task_status_2"/></td>
+						<td><input type="radio" name="task_status_2"/></td>
+						<td>
+							<span class="fa fa-trash fa-md"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+ --></div>
+
+<!-- Modal section -->
+<div>
+	<app-modal
+		#modal
+		[title]="'Add task'"
+		*ngIf="newTask"
+		[saveBtnName] = "'Save'"
+		(save) = "save()"
+		(close)="newTask = false"
+	>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<label for="time_from">From</label>
+				<span class="time_from pull-right">
+					{{fields.from_hours}} : {{fields.from_mins}}
+				</span>
+				<div class="row" id="time_from">
+					<div class="col-xs-5">
+						<select class="form-control" [(ngModel)]="fields.from_hours">
+							<option *ngFor="let h of hours">{{h}}</option>
+						</select>
+					</div>
+					<div class="col-xs-2 text-center">
+						:
+					</div>
+					<div class="col-xs-5">
+						<select class="form-control" [(ngModel)]="fields.from_mins">
+							<option *ngFor="let m of minutes">{{m}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<label for="time_to">To</label>
+				<span class="time_to pull-right">
+					{{fields.to_hours}} : {{fields.to_mins}}
+				</span>
+				<div class="row" id="time_to">
+					<div class="col-xs-5">
+						<select class="form-control" [(ngModel)]="fields.to_hours">
+							<option *ngFor="let h of hours">{{h}}</option>
+						</select>
+					</div>
+					<div class="col-xs-2 text-center">
+						:
+					</div>
+					<div class="col-xs-5">
+						<select class="form-control" [(ngModel)]="fields.to_mins">
+							<option *ngFor="let m of minutes">{{m}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<label for="task">Work Detail</label>
+				<textarea rows="4" class="form-control" [(ngModel)]="fields.work_detail"></textarea>
+			</div>
+		</div>
+	</app-modal>
+</div>

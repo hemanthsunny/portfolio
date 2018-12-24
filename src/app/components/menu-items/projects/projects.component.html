@@ -1,0 +1,25 @@
+<div class="">
+	<div class="hs-intro">
+		<div class="col-xs-12">
+			<!-- <img src="assets/images/selfie.jpg" class="hs-img"> -->
+      <span class="fa fa-cloud fa-2x hs-img-icon"></span>
+		</div>
+    <div class="col-xs-12">
+      <i class="f-w-5">
+      I have been working on multiple technologies since 2015 ,and parallely enhancing my learning process till date. My philosophy is Do-Learn-Do.
+      </i>
+    </div>
+    <div class="col-xs-12 text-center" style="margin: 100px 0px;">
+      <button class="btn btn-primary" (click)="scroll(displayMedia)">View my skills / projects</button>
+    </div>
+	</div>
+  <div class="clearfix"></div>
+	<div class="hs-skills" #displayMedia>
+		<app-cards
+			[title]="'skills'"
+			[icon]="'fa fa-tasks'"
+			[cardType]="'medium'"
+			[cardDetails]="cardDetails"
+		></app-cards>
+	</div>
+</div>

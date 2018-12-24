@@ -1,0 +1,380 @@
+[
+  {
+    "title": "MEAN stack",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/mean_stack.png",
+    "image_nf": "mean",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Interview experiences",
+        "link_to": "",
+        "width": "12"
+      }
+    ]
+  },
+  {
+    "title": "GIT",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/github.png",
+    "image_nf": "js",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "NPM",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/npm.png",
+    "image_nf": "js",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "JSON",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/json.png",
+    "image_nf": "js",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Discuss",
+        "link_to": ""
+      },
+      {
+        "link_name": "Gallery",
+        "link_to": ""
+      }
+    ]
+  },
+  {
+    "title": "Angular 2 / 4",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/angular.png",
+    "image_nf": "js",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+	{
+		"title": "FeathersJS",
+		"icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+		"image": "assets/images/skills/nodejs.png",
+		"image_nf": "js",
+		"body": [
+			{
+				"format": "text",
+				"subtitle": "Description",
+				"values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+			},
+			{
+				"format": "list",
+				"subtitle": "References",
+				"values": ["Freecodecamp", "W3 Schools"]
+			}
+		],
+		"links": [
+			{
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+		]
+	},
+	{
+		"title": "MongoDB",
+		"icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+		"image": "assets/images/skills/mongodb.jpeg",
+		"image_nf": "js",
+		"body": [
+			{
+				"format": "text",
+				"subtitle": "Description",
+				"values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+			},
+			{
+				"format": "list",
+				"subtitle": "References",
+				"values": ["Freecodecamp", "W3 Schools"]
+			}
+		],
+		"links": [
+			{
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+		]
+	},
+	{
+		"title": "MySQL",
+		"icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+		"image": "assets/images/skills/mysql.jpg",
+		"image_nf": "js",
+		"body": [
+			{
+				"format": "text",
+				"subtitle": "Description",
+				"values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+			},
+			{
+				"format": "list",
+				"subtitle": "References",
+				"values": ["Freecodecamp", "W3 Schools"]
+			}
+		],
+		"links": [
+			{
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+		]
+	},
+	{
+		"title": "Bootstrap",
+		"icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+		"image": "assets/images/skills/bootstrap.png",
+		"image_nf": "Bootstrap",
+		"body": [
+			{
+				"format": "text",
+				"subtitle": "Description",
+				"values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+			},
+			{
+				"format": "list",
+				"subtitle": "References",
+				"values": ["Freecodecamp", "W3 Schools"]
+			}
+		],
+		"links": [
+			{
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+		]
+	},
+  {
+    "title": "Javascript",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/javascript.png",
+    "image_nf": "js",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "CSS3",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/css.jpg",
+    "image_nf": "css",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Freecodecamp", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "HTML5",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/html_5.png",
+    "image_nf": "html_5",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Stack Overflow", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "Google Firebase",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/firebase.png",
+    "image_nf": "firebase",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Stack Overflow", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "Amazon Alexa",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/alexa.png",
+    "image_nf": "alexa",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Stack Overflow", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  },
+  {
+    "title": "AWS",
+    "icons": ["fa fa-times-thin", "fa fa-plus-thin"],
+    "image": "assets/images/skills/aws.png",
+    "image_nf": "aws",
+    "body": [
+      {
+        "format": "text",
+        "subtitle": "Description",
+        "values": "I started my career in HTML from 2015. I developed many small, medium and large ranged projects."
+      },
+      {
+        "format": "list",
+        "subtitle": "References",
+        "values": ["Stack Overflow", "W3 Schools"]
+      }
+    ],
+    "links": [
+      {
+        "link_name": "Demo my works",
+        "link_to": "",
+        "width": 12
+      }
+    ]
+  }
+]

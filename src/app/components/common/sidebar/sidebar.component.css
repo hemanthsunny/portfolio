@@ -1,0 +1,105 @@
+/*    Side bar (Small, Extra Small devices)  */
+/* ========================================== */
+
+.hs-slide-menu-list{
+	height: 100%;
+	position: fixed;
+	background-color: #1e272e;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.hs-slide-menu-list>li{
+	/*text-align: center;*/
+}
+
+.hs-slide-menu-list>li>a{
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	padding-left: 35px;
+	border-bottom: 1px solid #fff;
+	font-size: 16px;
+	line-height: 73px;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.hs-slide-menu-list>li:first-child>a{
+	padding: 75px 75px 35px;
+	border-bottom: 0px solid #fff;
+}
+
+.hs-slide-menu-list>li:not(:first-child)>a:focus,
+.hs-slide-menu-list>li:not(:first-child)>a:active,
+.hs-slide-menu-list>li:not(:first-child)>a:hover,
+.a-active>a{
+	cursor: pointer;
+	color: #f53b57 !important;
+	border-bottom: 1px solid #f53b57 !important;
+	background-color: #f1f2f6;
+}
+
+.hs-slide-menu-list-xs{
+	height: 100%;
+	position: fixed;
+	background-color: #1e272e;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.hs-slide-menu-list-xs>li>a{
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	padding-left: 35px;
+	border-bottom: 1px solid #fff;
+	font-size: 16px;
+	line-height: 73px;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.hs-slide-menu-list-xs>li:first-child>a{
+	padding: 75px 15px 35px;
+	border-bottom: 0px solid #fff;
+	line-height: 53px;
+}
+
+.hs-slide-menu-list-xs>li:not(:first-child)>a:focus,
+.hs-slide-menu-list-xs>li:not(:first-child)>a:active,
+.hs-slide-menu-list-xs>li:not(:first-child)>a:hover,
+.a-active>a{
+	cursor: pointer;
+	color: #f53b57 !important;
+	border-bottom: 1px solid #f53b57 !important;
+	border-right: 2px solid #f53b57;
+	background-color: #f1f2f6;
+}
+
+@media (max-width: 992px) {
+	.hs-slide-menu-list{
+		/*width: 25%;	*/
+		/*display: none;*/
+	}
+	.hs-slide-menu-list-xs{
+		/*display: inline-block;*/
+	}
+}
+
+@media (min-width: 993px) {
+	.hs-slide-menu-list{
+		/*width: 17%;	*/
+	}
+	.hs-slide-menu-list-xs{
+		/*display: none;*/
+	}
+}

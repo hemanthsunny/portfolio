@@ -1,0 +1,23 @@
+/* Write ideas page css only */
+
+.hs-ideas-container {
+  color: #808e9b;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  height: 100vh;
+}
+
+/* Media queries */
+@media (min-width: 1200px) {
+  .hs-ideas-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1159px) {
+  .hs-ideas-container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
