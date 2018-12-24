@@ -16,6 +16,8 @@ export class BlogComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log("adding log for testing purpose");
+    
   }
 
   displayBlog(blog){
