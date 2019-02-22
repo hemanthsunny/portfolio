@@ -12,6 +12,9 @@ export class SidebarDetailsComponent implements OnInit {
   workflow;
   
   @Input()
+  workflowId;
+
+  @Input()
   xsSidebar;
   
   constructor() { 

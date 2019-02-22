@@ -1,3 +1,4 @@
 /* Include all CSS stylesheets */
+@import url("./nav_bar.css");
 @import url("./blog.css");
 @import url("./ideas.css");

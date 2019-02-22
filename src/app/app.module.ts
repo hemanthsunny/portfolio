@@ -24,12 +24,13 @@ import { AuthService } from './providers/auth.service';
 import { CardsComponent } from './components/common/cards/cards.component';
 import { ModalComponent } from './components/common/modal/modal.component';
 import { BlogCardsComponent } from './components/menu-items/blog/details/blog-cards/blog-cards.component';
-import { BlogBodyComponent } from './components/menu-items/blog/details/blog-body/blog-body.component';
+import { BlogPostComponent } from './components/menu-items/blog/details/blog-post/blog-post.component';
 
 
 const appRoutes: Routes = [
 	{ path: '', component: HomeComponent },
-  { path: ':id', component: HomeComponent }
+  { path: ':workflow', component: HomeComponent },
+  { path: ':workflow/:id', component: BlogPostComponent }
 ]
 
 export const firebaseConfig = {
@@ -57,7 +58,7 @@ export const firebaseConfig = {
     CardsComponent,
     ModalComponent,
     BlogCardsComponent,
-    BlogBodyComponent
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,

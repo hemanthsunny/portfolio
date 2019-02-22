@@ -1,0 +1,38 @@
+/* Write nav bar css only */
+
+@media (min-width: 1200px) {
+	.hs-navbar-left{
+		/*width: 25%;	*/
+		/*display: none;*/
+	}
+	.hs-navbar-left-xs{
+		/*display: inline-block;*/
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1159px) {
+	.hs-navbar-left{
+		/*width: 17%;	*/
+	}
+	.hs-navbar-left-xs{
+		/*display: none;*/
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.hs-navbar-left, .hs-navbar-left-xs {
+		display: none;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.hs-navbar-left, .hs-navbar-left-xs {
+		display: none;
+	}
+}
+
+@media (max-width: 575px) {
+	.hs-navbar-left, .hs-navbar-left-xs {
+		display: none;
+	}
+}

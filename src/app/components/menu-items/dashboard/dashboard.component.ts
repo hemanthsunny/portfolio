@@ -21,8 +21,8 @@ export class DashboardComponent implements OnInit {
   fields;
   tasks: Array<any>;
   item: Observable<any>;
-  resumeLink = "https://firebasestorage.googleapis.com/v0/b/portfolio-fc6f1.appspot.com/o/files%2Fresume.pdf?alt=media&token=fcbcdc17-3dce-478e-96e8-4b2fdd4759d0";
-
+  resumeLink = "https://firebasestorage.googleapis.com/v0/b/portfolio-fc6f1.appspot.com/o/files%2Fresume.pdf?alt=media&token=f3f0567c-5ab7-4164-b019-12507fcd5767";
+  
   @ViewChild('modal')
   modal;
 

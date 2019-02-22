@@ -1,4 +1,4 @@
-<div id="sidebar-details">
+<div id="sidebar-details" *ngIf="!workflowId">
 	<app-dashboard *ngIf="workflow==='dashboard'"></app-dashboard>
 	<app-projects *ngIf="workflow==='skills'"></app-projects>
 	<app-ideas *ngIf="workflow==='ideas'"></app-ideas>

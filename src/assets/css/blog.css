@@ -1,26 +1,31 @@
 /* Write blog page css only */
 
 /* IDS */
+.hs-page-header {
+  margin-top: 80px;
+}
+
 #color-pale-white {
   color: #757575;
 }
 
-.blog-cards {
+.blog-card {
   width: calc(100vh / 1);
   border: 1px solid rgba(125, 117, 117, .5);
+  margin-bottom: 40px;
 }
 
-.blog-cards:hover {
+.blog-card:hover {
   cursor: pointer;
 }
 
-.blog-cards > .media-body > h4{
+.blog-card > .media-body > h4{
   width: 100px;
   text-overflow: ellipsis;
   overflow-x: hidden;
 }
 
-.hs-blog {
+.hs-blog-post {
   font-family: "Cabin Condensed", sans-serif;
 }
 

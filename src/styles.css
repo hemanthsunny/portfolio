@@ -213,7 +213,7 @@ input[type="radio"]:checked ~ .radio-check::before {
 
 .hs-navbar-left {
   background-color: #1e272e;
-  margin-left: -15px;
+  /*margin-left: -15px;*/
   padding-left: 0px;
   width: 220px;
   height: 50px;
@@ -225,7 +225,7 @@ input[type="radio"]:checked ~ .radio-check::before {
 
 .hs-navbar-left-xs {
   background-color: #1e272e;
-  margin-left: -15px;
+  /*margin-left: -15px;*/
   padding-left: 0px;
   width: 80px;
   height: 50px;

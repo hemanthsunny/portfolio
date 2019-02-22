@@ -8,11 +8,12 @@ import { BaseService } from "../../../../../base.service";
 export class BlogCardsComponent implements OnInit {
   blog: any;
   blogs: Array<any> = [];
-
+  imageNotFound = "https://firebasestorage.googleapis.com/v0/b/portfolio-fc6f1.appspot.com/o/blog_images%2Fimage_not_found.gif?alt=media&token=8c7c8056-5375-422c-98fa-c773dc493faf";
+  
   @Output() onClick = new EventEmitter();
 
   constructor(private baseService: BaseService) {
-    this.baseService.getJSON("blogs/index").then(res => {
+    this.baseService.getJSON("blog/index").then(res => {
       this.loadBlogs(res.blogs);
     });
 
@@ -22,7 +23,7 @@ export class BlogCardsComponent implements OnInit {
 
   loadBlogs(blogs){
     return blogs.map(blog => {
-      this.baseService.getJSON("blogs/"+ blog).then(res => {
+      this.baseService.getJSON("blog/"+ blog).then(res => {
         this.blogs.push(res);
       });
     })
